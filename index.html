@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Christly Home - Login & Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Login Form -->
+        <div id="loginForm" class="form-box">
+
+            <h1>Christly Home</h1>
+            <h2>Login</h2>
+
+            <input type="email" id="loginEmail" placeholder="Email">
+
+            <input type="password" id="loginPassword" placeholder="Password">
+
+            <button onclick="login()">Login</button>
+
+            <p>
+                Don't have an account?
+                <a href="#" onclick="showRegister()">Register</a>
+            </p>
+
+        </div>
+
+
+        <!-- Registration Form -->
+        <div id="registerForm" class="form-box hidden">
+
+            <h1>Christly Home</h1>
+            <h2>Create Account</h2>
+
+            <input type="text" id="name" placeholder="Full Name">
+
+            <input type="email" id="registerEmail" placeholder="Email">
+
+            <input type="password" id="registerPassword" placeholder="Password">
+
+            <input type="password" id="confirmPassword" placeholder="Confirm Password">
+
+            <button onclick="register()">Register</button>
+
+            <p>
+                Already have an account?
+                <a href="#" onclick="showLogin()">Login</a>
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
